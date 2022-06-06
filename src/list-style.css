@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.list-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background: white;
+    color: currentColor;
+    text-decoration: none;
+    overflow: hidden;
+    transition-delay: 0.15s;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+}
+
+.card.hover {
+    color: white;
+    transition-delay: 0;
+}
+
+.card, .card-img, .card-img::after, .card-auther, .card-body, .card-foot, .card-border{
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+
+.card-head{
+    position: relative;
+    padding-top: 70%;
+}
+
+.card-auther{
+    position: absolute;
+    padding: 2em;
+    left: 0;
+    bottom: 0;
+    color: white;
+    transition-property: transform;
+    transition-delay: 0.15s;
+}
+
+.card.hover .card-auther{
+    transition-delay: 0s;
+}
+
+.card-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://images.unsplash.com/photo-1602080858428-57174f9431cf?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500');
+    transform-origin: top center;
+    transition-property: transform;
+    transition-delay: 0.15s;
+}
+
+.card-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background-color: linear-gradient(30deg, rgba(26, 42, 99, 0.85), rgba(26, 42, 99, .5));
+    transition-property: opacity;
+    transition-delay: 0.15s;
+}
+
+.card.hover .card-img {
+    transition-delay: 0;
+}
+
+.card.hover .card-img::after {
+    opacity: 1;
+    transition-delay: 0;
+}
+
+.card-body {
+    position: relative;
+    padding: 2em;
+    transition-property: transform;
+}
+
+.card.hover .card-body{
+    transition-delay: 0;
+}

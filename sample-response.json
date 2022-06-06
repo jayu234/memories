@@ -1,0 +1,24 @@
+{
+    "_id": {
+        "$oid": "628b8f5fa42d6b835c53fdf2"
+    },
+    "title": "Goa trip",
+    "creator": "Admin",
+    "summary": "This was a grate trip. Awesome trip.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, odit a. Quasi doloremque id impedit, laborum ipsa ea incidunt provident dignissimos tempora libero mollitia numquam veritatis maxime",
+    "tags": [
+        "GoaTrip",
+        "AwesomeTrip",
+        "Summer",
+        "SummerVacation"
+    ],
+    "image": {
+        "public_id": "16665635",
+        "url": "www.unsplash.com/random"
+    },
+    "createdAt": {
+        "$date": {
+            "$numberLong": "1653313375863"
+        }
+    },
+    "__v": 0
+}
