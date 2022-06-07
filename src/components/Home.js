@@ -111,11 +111,11 @@ function Home() {
                 { (progress !== 0) && <Box sx={{ width: '100%' }} >
                     <LinearProgress value={progress}/>
                 </Box> }
-                <Grid item xs={6} >
+                <Grid item xs={12} md={6}>
                     <Input addMemory={addMemory} setProgress={setProgress} />
                     {/* <Input /> */}
                 </Grid>
-                <Grid item xs={6} >
+                <Grid item xs={12} md={6}>
                     <Lists loading={loading} memories={memories} getAllMemories={getAllMemories} setLoading={setLoading} editMemory={editMemory} deleteMemory={deleteMemory} setProgress={setProgress}/>
                     {/* <Lists /> */}
                 </Grid>
