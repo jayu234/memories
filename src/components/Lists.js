@@ -94,10 +94,9 @@ function Lists({ loading,  memories, editMemory, deleteMemory, setProgress }) {
               <StyledInputBase
                 placeholder="Search by title…"
                 inputProps={{ 'aria-label': 'search' }}
-                value={searchQuery}
-                onChange={(e) => { setSearchQuery(e.target.value) }}
-                onKeyDown={(e) => { e.code === "Enter" && handleKeyDown() }}
-
+                value={query}
+                onChange={(e) => { setQuery(e.target.value) }}
+                // onKeyDown={(e) => { e.code === "Enter" && handleKeyDown() }}
               />
             </Search>
           </Grid>}
