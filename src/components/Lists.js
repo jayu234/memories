@@ -92,7 +92,7 @@ function Lists({ loading,  memories, editMemory, deleteMemory, setProgress }) {
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
-                placeholder="Search by title…"
+                placeholder="Search by creator…"
                 inputProps={{ 'aria-label': 'search' }}
                 value={query}
                 onChange={(e) => { setQuery(e.target.value) }}
